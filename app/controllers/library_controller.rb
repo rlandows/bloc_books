@@ -1,7 +1,8 @@
 class LibraryController < BlocWorks::Controller
    @@name = nil
    def index
-     render :index , library: Library.all
+     @lib = Library.all
+     render :index , library: @lib
    end
 
    def new
