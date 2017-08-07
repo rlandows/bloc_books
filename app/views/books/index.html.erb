@@ -1,8 +1,11 @@
 <h1> All books</h1>
 
 <% books.each do |book| %>
+<form action="/books/show" method="post">
   <p><b>Name: </b><%= book.name %></p>
   <p><b>Author: </b><%= book.author %></p>
   <p><b>Pages: </b><%= book.pages %></p>
+  <input type="submit" value="show" name="<%= book.name %>">
+</form>
   <br>
 <% end %>

@@ -6,3 +6,4 @@ gem 'sqlite3'
 gem 'test-unit', '~> 3.2', '>= 3.2.3'
 gem "rack-test", "~> 0.6.3"
 gem "rspec"
+gem "pry"

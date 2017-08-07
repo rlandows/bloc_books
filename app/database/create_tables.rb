@@ -1,7 +1,6 @@
 require 'sqlite3'
 
  db = SQLite3::Database.new("database/database.sqlite")
-
  db.execute("DROP TABLE library;");
  db.execute("DROP TABLE book;");
 
