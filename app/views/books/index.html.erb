@@ -5,7 +5,8 @@
   <p><b>Name: </b><%= book.name %></p>
   <p><b>Author: </b><%= book.author %></p>
   <p><b>Pages: </b><%= book.pages %></p>
-  <input type="submit" value="show" name="<%= book.name %>">
+  <input type="hidden" name="id" value="<%= book.id %>"/>
+  <input type="submit" value="show" name="<%= book.name %>" >
 </form>
   <br>
 <% end %>
